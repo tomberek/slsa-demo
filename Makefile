@@ -22,7 +22,7 @@ build-service:
 build-as-code:
 	echo 'https://github.com/NixOS/nixpkgs/blob/master/pkgs/tools/misc/cowsay/default.nix'
 
-ephermeral-environment:
+ephemeral-environment:
 	nix build .#hello-sandbox -L
 
 isolated:

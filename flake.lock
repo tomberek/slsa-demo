@@ -1,6 +1,37 @@
 {
   "nodes": {
+    "cyclonedx": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1635790599,
+        "narHash": "sha256-zH6FRzcGkDJono9mAAD4MQRxYRjbc8kHPZwsQNTW7Sg=",
+        "owner": "sudo-bmitch",
+        "repo": "convert-nix-cyclonedx",
+        "rev": "37cabebed45f8673b2951bada1088a6e07a8de41",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sudo-bmitch",
+        "repo": "convert-nix-cyclonedx",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
+      "locked": {
+        "lastModified": 1633791597,
+        "narHash": "sha256-HzpxqTEnqsjkKWfW87kSI3WVizYjUMQeUjSIm3b5I0Y=",
+        "path": "/nix/store/fjdfm9jz85sr5a8fnmp4d10i1cf95ncp-source",
+        "rev": "9bf75dd50b7b6d3ce6aaf6563db95f41438b9bdb",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
       "locked": {
         "lastModified": 1638036800,
         "narHash": "sha256-7OrJP3haqposNbn3d8Ut3TaQaYXJaJ231+X2GH6xoh0=",
@@ -15,7 +46,8 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "cyclonedx": "cyclonedx",
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
